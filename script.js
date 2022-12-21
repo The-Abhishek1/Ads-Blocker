@@ -6,3 +6,6 @@ let adClasses = ["ad", "ads", "adsbox", "ad-placement", "doubleclick", "ad-place
 for (let item of adClasses) {
     detect.classList.add(item); // adding all array item in detect element
 }
+//getting display property value of our detect element
+let getProperty = window.getComputedStyle(detect).getPropertyValue("display");
+console.log(getProperty);
